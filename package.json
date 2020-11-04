@@ -12,7 +12,7 @@
   "bin": "bin/rendertron",
   "scripts": {
     "build": "tsc",
-    "prepack": "npm run build",
+    "prepare": "npm run build",
     "start": "node build/rendertron.js",
     "format": "find src -name '*.ts' | xargs clang-format --style=file -i",
     "lint": "tslint --project . --format stylish",
